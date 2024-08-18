@@ -40,12 +40,12 @@ const formSchema = z.object({
   podcastTitle: z.string().min(2),
   podcastDescription: z.string().min(2),
 })
-
-const CreatePodcast = () => {
-  const router = useRouter()
+ 
+const CreatePodcast = () => {  
+  const router = useRouter();
 
   const [imagePrompt, setImagePrompt] = useState('');
-  const [imageStorageId, setImageStorageId] = useState<Id<"_storage"> | null>(null)
+  const [imageStorageId, setImageStorageId] = useState<Id<"_storage"> | null>(null);
   const [imageUrl, setImageUrl] = useState('');
 
   const [audioUrl, setAudioUrl] = useState('');
